@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EkoWay - Logística Sustentável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #060b19; /* Cor de fundo escura */
+            color: #d0d0d0; /* Cor do texto padrão */
+        }
+        .text-green-primary { color: #2e7d32; }
+        .bg-green-primary { background-color: #2e7d32; }
+        .text-green-dark { color: #164218; }
+        .bg-green-dark { background-color: #164218; }
+        .text-green-darker { color: #0d250e; }
+        .bg-green-darker { background-color: #0d250e; }
+        .text-blue-accent { color: #144a5d; }
+        .bg-blue-accent { background-color: #144a5d; }
+        .text-light-gray { color: #d0d0d0; }
+        .bg-dark-blue { background-color: #060b19; }
+
+        .header-bg {
+            background-image: url(/images/Novo\ Projeto\ \(2\).png); /* Placeholder para imagem de frota */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .section-bg-trucks {
+            background-image: url('https://placehold.co/1920x400/164218/d0d0d0?text=Caminhões+Híbridos+e+Elétricos'); /* Placeholder para imagem de caminhões */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .section-bg-solar {
+            background-image: url('https://placehold.co/1920x400/144a5d/d0d0d0?text=Energia+Solar+EkoWay'); /* Placeholder para imagem de painéis solares */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .section-bg-digital {
+            background-image: url('https://placehold.co/1920x400/0d250e/d0d0d0?text=Digitalização+EkoWay'); /* Placeholder para imagem de tablets */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-green-darker p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="/images/Novo Projeto (4).png" alt="Logo EkoWay" class="h-12 w-auto rounded-lg mr-3">
+                <span class="text-light-gray text-2xl font-bold">EkoWay</span>
+            </div>
+            <!-- Links de Navegação -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="text-light-gray hover:text-green-primary transition duration-300">Home</a>
+                <a href="#" class="text-light-gray hover:text-green-primary transition duration-300">Serviços</a>
+                <a href="#" class="text-light-gray hover:text-green-primary transition duration-300">Sobre Nós</a>
+                <a href="#" class="text-light-gray hover:text-green-primary transition duration-300">Sustentabilidade</a>
+                <a href="#" class="text-light-gray hover:text-green-primary transition duration-300">Contato</a>
+            </div>
+            <!-- Botão de Menu para Mobile -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-light-gray focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-green-darker mt-2 rounded-md">
+            <a href="#" class="block px-4 py-2 text-light-gray hover:bg-green-dark transition duration-300 rounded-md">Home</a>
+            <a href="#" class="block px-4 py-2 text-light-gray hover:bg-green-dark transition duration-300 rounded-md">Serviços</a>
+            <a href="#" class="block px-4 py-2 text-light-gray hover:bg-green-dark transition duration-300 rounded-md">Sobre Nós</a>
+            <a href="#" class="block px-4 py-2 text-light-gray hover:bg-green-dark transition duration-300 rounded-md">Sustentabilidade</a>
+            <a href="#" class="block px-4 py-2 text-light-gray hover:bg-green-dark transition duration-300 rounded-md">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="header-bg relative flex items-center justify-center text-center py-24 md:py-32">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 p-6 rounded-lg">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-light-gray leading-tight mb-4 animate-fade-in-up">
+                Logística do Futuro, <br> Impacto Consciente.
+            </h1>
+            <p class="text-xl md:text-2xl text-light-gray mb-8 animate-fade-in-up delay-200">
+                Soluções logísticas inovadoras com foco total na sustentabilidade.
+            </p>
+            <button class="bg-green-primary hover:bg-green-dark text-light-gray font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105 animate-fade-in-up delay-400">
+                Conheça Nossos Serviços
+            </button>
+        </div>
+    </header>
+
+    <!-- Seção de Rastreamento (similar ao esboço) -->
+    <section class="bg-green-dark py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-light-gray mb-8 text-center">Rastreie Sua Encomenda</h2>
+            <div class="bg-green-darker p-8 rounded-lg shadow-xl max-w-3xl mx-auto">
+                <p class="text-light-gray mb-6 text-center">
+                    Insira seu CPF ou CNPJ e o número da nota fiscal do seu pedido.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="text" placeholder="CPF ou CNPJ" class="flex-1 p-3 rounded-md bg-dark-blue text-light-gray placeholder-light-gray focus:outline-none focus:ring-2 focus:ring-green-primary">
+                    <input type="text" placeholder="Número da Nota Fiscal" class="flex-1 p-3 rounded-md bg-dark-blue text-light-gray placeholder-light-gray focus:outline-none focus:ring-2 focus:ring-green-primary">
+                    <button class="bg-blue-accent hover:bg-blue-accent/80 text-light-gray font-bold py-3 px-6 rounded-md transition duration-300">
+                        Rastrear
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nova Seção: Gerador de Cotação Sustentável com Gemini API -->
+    <section class="py-16 bg-green-darker">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-green-primary mb-12">Gerador de Cotação Sustentável ✨</h2>
+            <div class="bg-green-dark p-8 rounded-lg shadow-xl max-w-4xl mx-auto">
+                <p class="text-light-gray mb-6">
+                    Descubra o impacto ambiental reduzido da sua próxima remessa com a EkoWay.
+                    Preencha os detalhes abaixo e receba uma análise personalizada.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <input type="text" id="origem" placeholder="Origem (Cidade, Estado)" class="p-3 rounded-md bg-dark-blue text-light-gray placeholder-light-gray focus:outline-none focus:ring-2 focus:ring-green-primary">
+                    <input type="text" id="destino" placeholder="Destino (Cidade, Estado)" class="p-3 rounded-md bg-dark-blue text-light-gray placeholder-light-gray focus:outline-none focus:ring-2 focus:ring-green-primary">
+                    <input type="number" id="peso" placeholder="Peso (kg)" class="p-3 rounded-md bg-dark-blue text-light-gray placeholder-light-gray focus:outline-none focus:ring-2 focus:ring-green-primary">
+                    <input type="text" id="tipo_mercadoria" placeholder="Tipo de Mercadoria (ex: Eletrônicos, Alimentos)" class="p-3 rounded-md bg-dark-blue text-light-gray placeholder-light-gray focus:outline-none focus:ring-2 focus:ring-green-primary">
+                </div>
+                <button id="generate-quote-button" class="bg-blue-accent hover:bg-blue-accent/80 text-light-gray font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                    Gerar Cotação Sustentável
+                </button>
+                <div id="loading-indicator" class="mt-4 text-green-primary hidden">Gerando análise...</div>
+                <div id="quote-result" class="mt-8 p-6 bg-dark-blue rounded-lg text-left text-light-gray hidden">
+                    <!-- O resultado da API Gemini será exibido aqui -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Destaque - Sustentabilidade -->
+    <section class="py-16 bg-dark-blue">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-green-primary mb-12">Nosso Compromisso com a Sustentabilidade</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Card 1: Frota Híbrida/Elétrica -->
+                <div class="bg-green-darker p-8 rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="text-green-primary mb-4">
+                        <!-- Ícone de Caminhão Elétrico (exemplo SVG) -->
+                        <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 8H4V6H20V8ZM20 10H4V12H20V10ZM20 14H4V16H20V14ZM22 3H2C1.45 3 1 3.45 1 4V20C1 20.55 1.45 21 2 21H22C22.55 21 23 20.55 23 20V4C23 3.45 22.55 3 22 3ZM21 19H3V5H21V19Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-light-gray mb-4">Frota 100% Ecológica</h3>
+                    <p class="text-light-gray">
+                        Caminhões híbridos e elétricos para reduzir emissões e preservar o meio ambiente.
+                    </p>
+                </div>
+                <!-- Card 2: Energia Solar -->
+                <div class="bg-green-darker p-8 rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="text-green-primary mb-4">
+                        <!-- Ícone de Painel Solar (exemplo SVG) -->
+                        <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM13 11H15L12 18L9 11H11V6H13V11Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-light-gray mb-4">Sede e Filiais Solares</h3>
+                    <p class="text-light-gray">
+                        Toda a nossa infraestrutura alimentada por energia limpa e renovável.
+                    </p>
+                </div>
+                <!-- Card 3: Digitalização -->
+                <div class="bg-green-darker p-8 rounded-lg shadow-xl transform hover:scale-105 transition duration-300">
+                    <div class="text-green-primary mb-4">
+                        <!-- Ícone de Tablet/Documento Digital (exemplo SVG) -->
+                        <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 1H5C3.9 1 3 1.9 3 3V21C3 22.1 3.9 23 5 23H19C20.1 23 21 22.1 21 21V3C21 1.9 20.1 1 19 1ZM19 21H5V3H19V21ZM12 5C10.34 5 9 6.34 9 8C9 9.66 10.34 11 12 11C13.66 11 15 9.66 15 8C15 6.34 13.66 5 12 5ZM17 17H7V16C7 14.34 10.34 13 12 13C13.66 13 17 14.34 17 16V17Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-light-gray mb-4">Contratação Digital</h3>
+                    <p class="text-light-gray">
+                        Redução do uso de papel com assinaturas digitais em tablets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Chamada para Ação -->
+    <section class="bg-green-primary py-16 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-light-gray mb-6">Pronto para uma Logística Sustentável?</h2>
+            <p class="text-xl text-light-gray mb-8 max-w-2xl mx-auto">
+                Entre em contato conosco e descubra como podemos transformar a sua cadeia de suprimentos com eficiência e responsabilidade ambiental.
+            </p>
+            <button class="bg-blue-accent hover:bg-blue-accent/80 text-light-gray font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Fale Conosco
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-darker py-8">
+        <div class="container mx-auto px-6 text-center text-light-gray">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="mb-4 md:mb-0">
+                    <img src="/images/Novo Projeto (4).png" alt="Logo EkoWay" class="h-10 w-auto rounded-lg mx-auto md:mx-0">
+                    <p class="mt-2 text-sm">&copy; 2025 EkoWay. Todos os direitos reservados.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-green-primary transition duration-300">Política de Privacidade</a>
+                    <a href="#" class="hover:text-green-primary transition duration-300">Termos de Uso</a>
+                </div>
+            </div>
+            <p class="text-sm">Endereço: Rua da Sustentabilidade, 123 - Cidade Verde, Estado Ecológico</p>
+            <p class="text-sm">Telefone: (XX) XXXX-XXXX | Email: contato@ekoway.com.br</p>
+        </div>
+    </footer>
+
+    <script>
+        // Script para o menu mobile
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Script para o Gerador de Cotação Sustentável
+        document.getElementById('generate-quote-button').addEventListener('click', async function() {
+            const origem = document.getElementById('origem').value;
+            const destino = document.getElementById('destino').value;
+            const peso = document.getElementById('peso').value;
+            const tipoMercadoria = document.getElementById('tipo_mercadoria').value;
+            const quoteResultDiv = document.getElementById('quote-result');
+            const loadingIndicator = document.getElementById('loading-indicator');
+
+            // Validação simples dos inputs
+            if (!origem || !destino || !peso || !tipoMercadoria) {
+                quoteResultDiv.innerHTML = '<p class="text-red-500">Por favor, preencha todos os campos para gerar a cotação.</p>';
+                quoteResultDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Mostrar indicador de carregamento e esconder resultado anterior
+            loadingIndicator.classList.remove('hidden');
+            quoteResultDiv.classList.add('hidden');
+            quoteResultDiv.innerHTML = ''; // Limpar conteúdo anterior
+
+            const prompt = `Como uma empresa de logística sustentável chamada EkoWay, que usa frota híbrida/elétrica e energia solar em suas instalações, explique o impacto ambiental reduzido de uma remessa com as seguintes características:
+            Origem: ${origem}
+            Destino: ${destino}
+            Peso: ${peso} kg
+            Tipo de Mercadoria: ${tipoMercadoria}
+
+            Foque em como a EkoWay minimiza a pegada de carbono e outros impactos ambientais para esta remessa específica, mencionando os benefícios da frota e da energia solar. Seja conciso e direto.`;
+
+            let chatHistory = [];
+            chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+            const payload = { contents: chatHistory };
+            const apiKey = ""; // A chave da API será fornecida automaticamente pelo ambiente Canvas
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+
+                // Esconder indicador de carregamento
+                loadingIndicator.classList.add('hidden');
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    quoteResultDiv.innerHTML = `<h3 class="text-xl font-semibold text-green-primary mb-2">Análise de Sustentabilidade da Sua Remessa:</h3><p>${text}</p>`;
+                    quoteResultDiv.classList.remove('hidden');
+                } else {
+                    quoteResultDiv.innerHTML = '<p class="text-red-500">Não foi possível gerar a análise. Tente novamente mais tarde.</p>';
+                    quoteResultDiv.classList.remove('hidden');
+                }
+            } catch (error) {
+                console.error('Erro ao chamar a API Gemini:', error);
+                loadingIndicator.classList.add('hidden');
+                quoteResultDiv.innerHTML = '<p class="text-red-500">Ocorreu um erro ao processar sua solicitação. Por favor, tente novamente.</p>';
+                quoteResultDiv.classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
